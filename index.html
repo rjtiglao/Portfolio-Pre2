@@ -11,32 +11,43 @@
     <title>Hello, world!</title>
   </head>
     <body>
-        <nav>
-            <div class="d-flex justify-content-around bd-highlight">
+        <div class="container">
+            <nav class="navbar fixed-top navbar-light bg-light d-flex justify-content-around align-items-end" style="padding:2%; background-image: URL('https://backgrounddownload.com/wp-content/uploads/2018/09/single-color-background-images-hd-2.jpg');">
                 <!--Name-->
-                <div class="p-2 bd-highlight">Ryan Tiglao</div> 
+                <div class="navbar-brand" style="color:white">Ryan Tiglao</div> 
                 <!--About | Contact | Portfolio-->
-                <div class="p-2 bd-highlight"> 
+                <div class="navbar-brand"> 
                     <a href="./index.html">About</a> | <a href="./contact.html">Contact</a> | <a href="./portfolio.html">Portfolio</a>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
                 <!--About Me-->
-        <div class="section">
-            <div class="video-container">
+        <div style=" position: relative; width: 100%; overflow: hidden;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%;">
                <video autoplay loop muted>
                     <source src="./assets/images/background-network.mp4">
                 </video>
             </div>
-            <div class="mainBg">
-                <div class="main">
-                    <h1>About Me</h1>
+            <div style="padding-left: 25%; padding-right: 25%; padding-bottom: 2%;
+            overflow: auto;">
+                <div class="jumbotron jumbotron-fluid" style="z-index: 1;
+                position: relative;
+                background: rgba(6, 50, 92, 0.63);
+                color: whitesmoke; font-family: 'Gentium Book Basic', serif;">
+                 <div class="container">
+                    <h1 class="display-4">About Me</h1>
                     <br>
                     <hr>
                     <br>
-                    <div class="center">
-                        <img src="./assets/images/image1.jpeg"> 
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    <div style="display: flex;
+                    flex-direction: row;
+                    margin: 2%;
+                    line-height: 20px;">
+                        <img  style="width: 15%;
+                        height: 15%;
+                        opacity: 0.8;
+                        padding-right: 10px;"src="./assets/images/image1.jpeg"> 
+                        <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                         Why do we use it?
                         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
 
@@ -59,9 +70,9 @@
                         ipsum dolor sit amet...'</p>
                     </div>
                 </div>
-            </div> 
+            </div> </div>
         </div>       
-        <footer>Copyright &copy;</footer>
+        <footer class="navbar fixed-bottom navbar-light bg-light d-flex justify-content-around" style="padding:2%; color:white; background-image: URL('https://backgrounddownload.com/wp-content/uploads/2018/09/single-color-background-images-hd-2.jpg');">Copyright &copy;</footer>
         
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
